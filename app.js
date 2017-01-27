@@ -48,4 +48,16 @@ function myGame() {
     // Do something else
     alert('Incorrect, I have two children, Liam (5) and Darcie (2).');
   }
+    // Ask question
+  var userAnswerFive = prompt('Name one of my hobbies.')
+    // Define array with possible answers
+  var answerFiveArray = ["spending time with family", "homebrewing", "playing disc golf", "skiing", "rock climbing"]
+    // If statement tries to match userAnswerFive against answerFiveArray
+  if (userAnswerFive.toLowerCase() === indexOf(answerFiveArray) {
+    // Do something
+    alert('Correct, ' + userAnswerFive + ' is one of my hobbies!');
+  } else {
+    // Do something else
+    alert('Incorrect, ' + userAnswerFive + ' is NOT one of my hobbies!')
+  }
 }
