@@ -1,0 +1,76 @@
+/*Main Stylesheet for index.html*/
+
+/* By Element Name */
+body {
+  font-family: helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  margin: 0;
+  background-color: black;
+  min-height:800px;
+}
+
+#container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: white;*/
+  padding: 0;
+}
+header {
+  /*padding-top: 10px;
+  padding-bottom: 10px;*/
+  width:100%;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin: 0;
+  /*padding: 10px;*/
+  text-align:center;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+main {
+
+}
+
+#left {
+  padding: 0 10px 10px 10px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px;
+  width:620px;
+  float:left;
+  margin-right:10px;
+  min-height: 700px;
+  margin-bottom: 50px;
+}
+#right {
+  padding: 0 10px 10px 10px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px;
+  width:230px;
+  float: left;
+  /*min-height: 700px;*/
+}
+
+#left ul {
+  padding-left:0;
+}
+
+#left ul li {
+  display:block;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  padding:10px 20px 10px 20px;
+  margin-left:10px;
+}
