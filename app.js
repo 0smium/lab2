@@ -87,7 +87,7 @@ function myGame() {
   // Console returns player's answer 'userAnswerFive'
   console.log('Player\'s response to question 5 is \"' + userAnswerFive + '\".')
     // Define array 'answerFiveArray' with possible answers
-  var answerFiveArray = ['spending time with family', 'homebrewing', 'playing disc golf', 'skiing', 'rock climbing'];
+  var answerFiveArray = ['spending time with family', 'homebrewing', 'playing disc golf', 'skiing', 'rock climbing', 'welding'];
     // If statement tries to match userAnswerFive against answerFiveArray
   if (answerFiveArray.indexOf(userAnswerFive.toLowerCase()) > -1) {
     // Do something
