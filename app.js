@@ -103,14 +103,13 @@ function myGame() {
 
   // Ask question 6
   var userAnswerSix = prompt('Name a subject I taught.');
-    // Define array 'answerSixArray' with possible answers
 
-    // Console returns player's answer 'userAnswerSix'
+    //Console returns player's answer 'userAnswerSix'
     console.log('Player\'s response to question 6 is \"' + userAnswerSix + '\".')
-
+    // Define array 'answerSixArray' with possible answers
   var answerSixArray = ['biology', 'chemistry', 'physics', 'astronomy'];
     // If statement tries to match userAnswerFive against answerFiveArray
-  if (answerSixArray.indexOf(userAnswerSix.toLowerCase()) > -1) {
+  if (answerSixArray.indexOf(userAnswerSix.toLowerCase()) !== -1) {
     // Do something
     alert('Correct, ' + userAnswerSix + ' is a subject I taught!');
     //Log user's correct answer to console.
@@ -121,4 +120,30 @@ function myGame() {
     //Log user's incorrect answer to console.
     console.log('User\'s answer to question 6, \"' + userAnswerSix + '\" does NOT match an array element and is NOT a correct response.');
   }
+
+  // Ask question 7
+
+  var numAnswerSevenTries = 0;
+  do {
+    numAnswerSevenTries += 1;
+    console.log('This is try ' + numAnswerSevenTries + '.');
+    var userAnswerSeven = prompt('How old am I?');
+    console.log('Player\'s response to question 7 is \"' + userAnswerSeven + '\".');
+    if (userAnswerSeven > 31) {
+      alert('Too high.  Guess again.');
+      console.log('The user\'s last entry was too high.');
+    } else if (userAnswerSeven < 31) {
+      alert('Too low.  Guess again.')
+      console.log('The user\'s last entry was too low.');
+    }
+  } while (userAnswerSeven != 31 && numAnswerSevenTries < 4)
+console.log(numAnswerSevenTries);
+
+if (numAnswerSevenTries === 4) {
+  alert('Sorry, you ran out of tries.');
+}
+else {
+  alert('Correct, I am 31 years old.');
+}
+
 }
