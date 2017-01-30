@@ -152,10 +152,10 @@ function myGame() {
     var userAnswerSeven = prompt('How old am I?');
     console.log('Player\'s response to question 7 is \"' + userAnswerSeven + '\".');
     if (userAnswerSeven > 31) {
-      alert('Try ' + numAnswerSevenTries + ' of 4. Too high.  Guess again.');
+      alert('Too high!  Try ' + numAnswerSevenTries + ' of 4');
       console.log('The user\'s last entry was too high.');
     } else if (userAnswerSeven < 31) {
-      alert('Try ' + numAnswerSevenTries + ' of 4. Too low.  Guess again.')
+      alert('Too low.  Try ' + numAnswerSevenTries + ' of 4.')
       console.log('The user\'s last entry was too low.');
     }
     // 'while' statement causes the 'do' loop to repeat until question is answered correctly or they run out of tries.
@@ -188,7 +188,7 @@ do {
     console.log(userAnswerEight + ' is a correct response.')
   }
     else {
-      alert('Try ' + numAnswerEightTries + ' of 6. Incorrect, ' + userAnswerEight + ' is NOT a country I\'ve visited.  Try again!');
+      alert('Incorrect, ' + userAnswerEight + ' is NOT a country I\'ve visited.  Try ' + numAnswerEightTries + ' of 6.');
       console.log(userAnswerEight + ' is NOT a correct response.');
     }
   // 'while' statement causes the 'do' loop to repeat until question is answered correctly or they run out of tries.
@@ -197,12 +197,12 @@ do {
 
   if (numAnswerEightTries === 6) {
     console.log('User ran out of tries.');
-    alert('Sorry, you ran out of tries.  The possible correct answers were ' + answerEightArrayAsString + '.');
+    alert('Sorry, you ran out of tries.  All of the countries I\'ve visted are ' + answerEightArrayAsString + '.');
   }
 
   else {
     console.log('User\'s answer to question 8, \"' + userAnswerEight + '\" matches an array element and is a correct response.');
-    alert('Correct, all the possible answers were ' + answerEightArrayAsString + '.');
+    alert('Correct, all of the countries I\'ve visted are ' + answerEightArrayAsString + '.');
     numCorrectResponses += 1;
   }
   // Log the number of correct answers so far
