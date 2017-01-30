@@ -61,12 +61,24 @@ main {
   /*min-height: 700px;*/
 }
 
-#left ul {
+/*#left ul {
   padding-left:0;
 }
 
 #left ul li {
   display:block;
+}*/
+
+ol {
+  column-count: 2;
+  column-gap: 10px;
+}
+
+li.left {
+}
+
+li.right {
+  margin-left: 20px;
 }
 
 button {
